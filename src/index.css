@@ -1,0 +1,31 @@
+@import 'katex/dist/katex.min.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #FAF7F5;
+    color: #2E2625;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4 {
+    color: #1A1615;
+  }
+}
+
+/* Ensure KaTeX formulas inherit high-contrast espresso ink and wrap gracefully on mobile */
+.katex {
+  font-size: 1.03em;
+  color: #1A1615;
+}
+
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.25rem 0;
+}
+
